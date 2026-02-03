@@ -57,16 +57,16 @@ diagnostic = { underline = { color = "ghost", style = "curl" } }
 #"attribute" = {}
 #"tag" = {}
 "tag.error" = { fg = "err", underline = { style = "line" } }
-"constant" = "literal"
+"constant" = { fg = "literal", bg = "literal_bg" }
 # TO-DO: escapes need highlight, but not unsafe
 "constant.character.escape" = "literal_unsafe"
 # floats are a plague!
 # https://github.com/you-dont-need/You-Dont-Need/issues/13
 "constant.numeric.float" = { fg = "literal_unsafe", bg = "literal_bg_unsafe" }
-"string" = "literal"
+"string" = { fg = "literal", bg = "literal_bg" }
 "string.regexp" = { fg = "literal_unsafe", bg = "literal_bg_unsafe" }
 "string.special" = "sym"
-"comment" = "doc"
+"comment" = { fg = "doc", bg = "doc_bg" }
 # some are mutable and can be misused without triggering warns
 #"variable.builtin" = "literal_unsafe"
 "punctuation" = "default_weak"
@@ -78,7 +78,7 @@ diagnostic = { underline = { color = "ghost", style = "curl" } }
 "markup.italic" = { modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 "markup.link" = { fg = "sym", underline = { style = "line" } }
-"markup.quote" = "doc"
+"markup.quote" = { fg = "doc", bg = "doc_bg" }
 
 "markup.normal" = "default"
 "markup.normal.raw" = "code"
@@ -108,8 +108,10 @@ sel_weak = "#e7e7e7"
 err = "#f00"
 warn = "#ba0"
 diag = "#06a"
-literal = "#093"
+literal = "#030"
+literal_bg = "#bed"
 literal_unsafe = "#410"
 literal_bg_unsafe = "#eca"
 sym = "#0af"
-doc = "#707"
+doc = "#606"
+doc_bg = "#ede"
