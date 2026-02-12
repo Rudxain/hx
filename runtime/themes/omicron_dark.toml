@@ -12,6 +12,7 @@ diagnostic = { underline = { color = "ghost", style = "curl" } }
 "ui.background" = { bg = "bg" }
 "ui.window" = { bg = "bg_ui" }
 "ui.gutter" = { bg = "bg_ui" }
+"ui.linenr" = "default_weak"
 "ui.text" = "default"
 "ui.text.focus" = { bg = "sel" }
 # secondary
